@@ -1,0 +1,33 @@
+{
+  "name": "site-catalog-2021",
+  "version": "1.0.0",
+  "description": "Site-catalog with dog breeds",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "mode server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algorithm-ssau/site-catalog-2021.git"
+  },
+  "author": "Victor Chernikov, Laura Mbingou, Orest Nikolaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/algorithm-ssau/site-catalog-2021/issues"
+  },
+  "homepage": "https://github.com/algorithm-ssau/site-catalog-2021#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2"
+  },
+  "devDependencies": {
+    "mongodb": "^3.6.5",
+    "nodemon": "^2.0.7"
+  }
+}
